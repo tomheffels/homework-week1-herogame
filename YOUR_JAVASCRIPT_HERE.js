@@ -18,8 +18,8 @@ function rest(hero) {
     return hero;
 };
 
-function pickUpItem() {
-
+function pickUpItem(hero, weapon) {
+    hero.inventory.push(weapon)
 };
 
 function equipWeapon() {
