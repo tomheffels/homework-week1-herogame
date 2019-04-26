@@ -12,10 +12,12 @@ let hero = {
 
 function rest(hero) {
     if (hero.health === 10) {
-        alert("No need to rest now, Frosty! You're health is still full...")
+        alert("No need to rest now, " + hero.name + "! Your health is still full...")
     }
     hero.health = 10;
+    console.log(hero.health)
     return hero;
+
 };
 
 function pickUpItem(hero, weapon) {
@@ -25,8 +27,8 @@ function pickUpItem(hero, weapon) {
             damage: 2
         }
     }
-    console.log(weapon)
     hero.inventory.push(weapon)
+    console.log(hero.inventory)
 };
 
 function equipWeapon(hero) {
@@ -35,4 +37,15 @@ function equipWeapon(hero) {
     } else {
         hero.weapon = hero.inventory[hero.inventory.length - 1]
     }
+    console.log(hero.weapon)
 }
+
+function displayStats(hero) {
+    document.write("YOUR HERO ");
+    document.writeln("name: " + hero.name.toUpperCase());
+    document.writeln("health: " + hero.health + "HP");
+    document.writeln("weapon type: " + hero.weapon.type.toUpperCase());
+    document.writeln("weapon damage: " + hero.weapon.damage + "HP");
+}
+
+displayStats(hero)
