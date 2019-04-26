@@ -1,7 +1,7 @@
 // Write your JS here
 let hero = {
     name: "Frosty the Snowman",
-    heroic: true,
+    heroic: false,
     inventory: [],
     health: 10,
     weapon: {
@@ -15,8 +15,7 @@ function rest(hero) {
         alert("No need to rest now, " + hero.name + "! Your health is still full...")
     }
     hero.health = 10;
-    con
-    sole.log(hero.health)
+    console.log(hero.health)
     return hero;
 
 };
@@ -58,6 +57,15 @@ function setHeroName(hero) {
     } else {
         hero.name = heroName;
     }
+}
+
+function fightMonster(hero) {
+    alert(`A monster appeared right in front of you, ${hero.name}, time to fight!`)
+    hero.health = (hero.health - 3);
+    alert(`The monster attacked first, you took 3HP of damage.`)
+    hero.heroic = true
+    alert(`You knocked the monster's lights out with your ${hero.weapon.type}. You are now a true hero, ${hero.name}!`)
+    console.log(hero)
 }
 
 document.getElementById("changeHeroName").onclick = function() {
