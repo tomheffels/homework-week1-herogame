@@ -8,4 +8,16 @@ let hero = {
         type: "snowball",
         damage: 2
     }
-}
+};
+
+function rest() {
+
+};
+
+function pickUpItem() {
+
+};
+
+function equipWeapon() {
+
+};
