@@ -4,4 +4,8 @@ let hero = {
     heroic: true,
     inventory: [],
     health: 10,
+    weapon: {
+        type: "snowball",
+        damage: 2
+    }
 }
