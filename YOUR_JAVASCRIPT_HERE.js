@@ -19,9 +19,19 @@ function rest(hero) {
 };
 
 function pickUpItem(hero, weapon) {
+    if (weapon === 'dagger') {
+        weapon = {
+            type: "dagger",
+            damage: 2
+        }
+    }
+    console.log(weapon)
     hero.inventory.push(weapon)
 };
 
 function equipWeapon() {
 
 };
+
+
+}
