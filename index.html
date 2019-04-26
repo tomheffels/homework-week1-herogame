@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" type=text/css href="herogame.css">
 </head>
 
 <body>
@@ -12,6 +13,8 @@
     <!-- 👍 YOUR HTML HERE 👍 -->
     <img id="inn" onclick="rest(hero)"></img>
     <img id="dagger" onclick="pickUpItem(hero, 'dagger')"></img>
+    <img id="bag" onclick="equipWeapon(hero)"></img>
+
 
     <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
     <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
