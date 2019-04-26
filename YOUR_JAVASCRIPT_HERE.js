@@ -29,9 +29,10 @@ function pickUpItem(hero, weapon) {
     hero.inventory.push(weapon)
 };
 
-function equipWeapon() {
+function equipWeapon(hero) {
+    if (hero.inventory.length === 0) {
 
-};
-
-
+    } else {
+        hero.weapon = hero.inventory[hero.inventory.length - 1]
+    }
 }
