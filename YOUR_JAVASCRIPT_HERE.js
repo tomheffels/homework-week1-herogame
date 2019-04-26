@@ -10,8 +10,12 @@ let hero = {
     }
 };
 
-function rest() {
-
+function rest(hero) {
+    if (hero.health === 10) {
+        alert("No need to rest now, Frosty! You're health is still full...")
+    }
+    hero.health = 10;
+    return hero;
 };
 
 function pickUpItem() {
