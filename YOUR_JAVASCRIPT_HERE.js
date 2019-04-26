@@ -15,7 +15,8 @@ function rest(hero) {
         alert("No need to rest now, " + hero.name + "! Your health is still full...")
     }
     hero.health = 10;
-    console.log(hero.health)
+    con
+    sole.log(hero.health)
     return hero;
 
 };
@@ -46,6 +47,21 @@ function displayStats(hero) {
     document.writeln("health: " + hero.health + "HP");
     document.writeln("weapon type: " + hero.weapon.type.toUpperCase());
     document.writeln("weapon damage: " + hero.weapon.damage + "HP");
+}
+
+var myButton = document.querySelector('button');
+
+function setHeroName(hero) {
+    let heroName = prompt("Please enter your hero's name.");
+    if (!heroName) {
+        alert("You forgot to write a name, silly!")
+    } else {
+        hero.name = heroName;
+    }
+}
+
+document.getElementById("changeHeroName").onclick = function() {
+    setHeroName(hero);
 }
 
 displayStats(hero)
