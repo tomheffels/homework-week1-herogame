@@ -11,11 +11,12 @@
 
 
     <!-- 👍 YOUR HTML HERE 👍 -->
-    <img id="inn" onclick="rest(hero)" alt="Rest at the inn to restore health"></img>
-    <img id="dagger" onclick="pickUpItem(hero, 'dagger')" alt="Pick up dagger"></img>
-    <img id="bag" onclick="equipWeapon(hero)" alt="Equip weapon from your bag"></img>
-    <img id="monster" onclick="fightMonster(hero)" alt="Fight a monster"></img>
+    <img id="inn" class="image" onclick="rest(hero)" src="images/inn.jpeg" title="Rest at the inn to restore health"></img>
+    <img id="dagger" class="image" onclick="pickUpItem(hero, 'dagger')" src="images/dagger.jpeg" title="Pick up dagger"></img>
+    <img id="bag" class="image" onclick="equipWeapon(hero)" src="images/bag.jpeg" title="Equip weapon from your bag"></img>
+    <img id="monster" class="image" onclick="fightMonster(hero)" src="images/monster.jpeg" title="Fight a monster"></img>
     <button id="changeHeroName">CHANGE HERO NAME</button>
+
 
     <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
     <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
@@ -30,7 +31,9 @@
     <script>
         mocha.setup('bdd')
     </script>
-    <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+    <pre>
+      <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+    </pre>
     <script src="lib/game_logic.test.js"></script>
 
 </body>

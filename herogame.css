@@ -1,4 +1,19 @@
 img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+#monster {
+    cursor: crosshair;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px
+}
+
+#changeHeroName {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
