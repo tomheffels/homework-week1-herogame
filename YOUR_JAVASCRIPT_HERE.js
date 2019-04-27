@@ -15,9 +15,8 @@ function rest(hero) {
         alert("No need to rest now, " + hero.name + "! Your health is still full...")
     }
     hero.health = 10;
-    console.log(hero.health)
+    console.log(`Good morning ${hero.name}, your health is fully replenished! Health: ${hero.health}`)
     return hero;
-
 };
 
 function pickUpItem(hero, weapon) {
@@ -28,7 +27,9 @@ function pickUpItem(hero, weapon) {
         }
     }
     hero.inventory.push(weapon)
+    console.log(`A ${weapon.type} was added to your inventory.`)
     console.log(hero.inventory)
+        // document.getElementById('dagger').remove();
 };
 
 function equipWeapon(hero) {
@@ -37,6 +38,7 @@ function equipWeapon(hero) {
     } else {
         hero.weapon = hero.inventory[hero.inventory.length - 1]
     }
+    console.log(`You equipped your ${hero.weapon.type}.`)
     console.log(hero.weapon)
 }
 
@@ -56,6 +58,7 @@ function setHeroName(hero) {
         alert("You forgot to write a name, silly!")
     } else {
         hero.name = heroName;
+        console.log(`Hero's name changed to ${heroName}`)
     }
 }
 
@@ -66,7 +69,9 @@ function fightMonster(hero) {
     hero.heroic = true
     alert(`You knocked the monster's lights out with your ${hero.weapon.type}. You are now a true hero, ${hero.name}!`)
     console.log(hero)
+    document.getElementById('monster').remove();
 }
+
 
 document.getElementById("changeHeroName").onclick = function() {
     setHeroName(hero);
